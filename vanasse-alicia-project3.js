@@ -3,7 +3,7 @@
 //SDI 1501
 //Project 3
 
-// Console.log Function //
+// Global Function //
 
 var say = function (message) {
     console.log(message);
@@ -12,28 +12,23 @@ var say = function (message) {
 
 //Global Variables
 
-var southAmerica =  ["Peru",
+var southAmerica =  ["Peru",            //Countries on South America Itinerary 
                      "Chile",
                      "Argentina",
                      "Brazil",
                      "Uruguay"
                     ];
 
-var europe = ["Italy",
+var europe = ["Italy",					// Countries on Europe Itinerary
               "Spain",
               "Greece",
               "France",
               "The Netherlands"
              ];
 
-var flightPrices = [1000,
-                   850,
-                   1200,
-                   450,
-                   900,
-                   1150];
-var myMoney = 4200;
-var timeOff = true;
+var daysSouthAmerica = [10,5,4,5,1];		// Days needed for full enjoyment of 
+var daysEurope = [7, 5, 3, 4, 3];			// each country
+var timeOff = 24;
 var theAirport = "Logan International Airport";
 var oldCity = "Boston";
 var trip1 = "Europe"
