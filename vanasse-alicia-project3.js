@@ -31,7 +31,7 @@ var daysEurope = [7, 5, 3, 4, 3];			// each country
 var timeOff = 24;
 var theAirport = "Logan International Airport";
 var oldCity = "Boston";
-var trip1 = "Europe"
+var trip1 = "Europe";
 var trip2 = "South America";
 
 // Prompt for Procedure Argument
@@ -42,7 +42,15 @@ var letsFly = prompt("Lets fly away!","Europe or South America");
 
     if (letsFly === trip1) {
         say("I love Europe....but it is a little chilly this time of year");
-         } if (lestFly === trip2) {
-                say(trip2 + "sounds perfect right now!");
+         } if (letsFly === trip2) {
+                say(trip2 + " sounds perfect right now!");
          };
            
+           
+// Confirm for Boolean Argument Value
+
+var needTime = confirm(parseInt("You're going to need at least 2 weeks off!");
+
+//Boolean Function
+
+
