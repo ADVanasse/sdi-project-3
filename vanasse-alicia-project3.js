@@ -23,7 +23,6 @@ var europe = ["Italy",
               "The Netherlands"],
  	 daysEurope = [7, 5, 3, 4, 3];     	
 var travelBug = true;
-<<<<<<< HEAD
 var hotelCost = 150;
 var myVice = "Travel is my vice!";
 
@@ -33,14 +32,6 @@ var myVice = "Travel is my vice!";
 
 //String function
 
-var 
-
-
-=======
-var myMoney = 5000;
-var myVice = "Travel is my vice!";
-var youTravel;
->>>>>>> FETCH_HEAD
 
 // Prompt for Procedure Argument
 
@@ -52,9 +43,8 @@ var letsFly = prompt("Do you like to travel?","Yes or No");
         say("Me too, I just got back from a big trip to " + bigTrip + ".");
          } if (letsFly === "No") {
                 say("Really? But there's so much around the world to see!");
-<<<<<<< HEAD
          } else {
-         		say("Huh?");
+         	say("Huh?");
     };	
            
 // Array Function
@@ -71,16 +61,14 @@ var goToCountry = function (whereTo) {
             			say("I'd had such a great time in " + theCountry + "! As much as I hated leaving, " +
     							"I was really anxious to get to the next country.");
     							return goToCountry;
-    		};
+    			};
 		};
    				for (var countryNumber = 0; countryNumber < europe.length; countryNumber++) {
     					 goToCountry(countryNumber);  
-    					 	
-    };
+    	};
 
 goToCountry();
-=======
-         };
+    };
            
 // Array Function
 
@@ -105,9 +93,6 @@ for (var countryNumber = 0; countryNumber < europe.length; countryNumber++) {
 };
 
 
-
-
->>>>>>> FETCH_HEAD
 
 
 
