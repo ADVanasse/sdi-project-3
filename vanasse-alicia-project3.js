@@ -1,9 +1,12 @@
 
+
+
+
 //Alicia Vanasse
 //SDI 1501
 //Project 3
 
-// Global Function //
+// Global Function 
 
 var say = function (message) {
     console.log(message);
@@ -11,46 +14,59 @@ var say = function (message) {
 
 
 //Global Variables
-
-var southAmerica =  ["Peru",            //Countries on South America Itinerary 
-                     "Chile",
-                     "Argentina",
-                     "Brazil",
-                     "Uruguay"
-                    ];
-
-var europe = ["Italy",					// Countries on Europe Itinerary
+               
+var bigTrip = "Europe";            
+var europe = ["Italy",					
               "Spain",
               "Greece",
               "France",
-              "The Netherlands"
-             ];
-
-var daysSouthAmerica = [10,5,4,5,1];		// Days needed for full enjoyment of 
-var daysEurope = [7, 5, 3, 4, 3];			// each country
-var timeOff = 24;
-var theAirport = "Logan International Airport";
-var oldCity = "Boston";
-var trip1 = "Europe";
-var trip2 = "South America";
+              "The Netherlands"],
+ 	 daysEurope = [7, 5, 3, 4, 3];     	
+var travelBug = true;
+var myMoney = 5000;
+var myVice = "Travel is my vice!";
+var youTravel;
 
 // Prompt for Procedure Argument
 
-var letsFly = prompt("Lets fly away!","Europe or South America");
+var letsFly = prompt("Do you like to travel?","Yes or No");
 
 // Procedure
 
-    if (letsFly === trip1) {
-        say("I love Europe....but it is a little chilly this time of year");
-         } if (letsFly === trip2) {
-                say(trip2 + " sounds perfect right now!");
+    if (letsFly === "Yes") {
+        say("Me too, I just got back from a big trip to " + bigTrip + ".");
+         } if (letsFly === "No") {
+                say("Really? But there's so much around the world to see!");
          };
            
-           
-// Confirm for Boolean Argument Value
+// Array Function
 
-var needTime = confirm(parseInt("You're going to need at least 2 weeks off!");
+var goToCountry = function(whereTo) {
+    var theCountry = europe[whereTo],
+        daysThisCountry = daysEurope[countryNumber];
+   			 say( "I was excited to visit " + theCountry +
+        " for " + daysThisCountry + " days. It went by way too fast.");
+    for (var days = 0; days < daysThisCountry; days ++) {
+            var daysLeft = daysThisCountry - days;
+            	say("Before I knew it " + days + " had gone by, leaving me with only " +
+            		daysLeft + "to enjoy the country's beauty.");
+            			return europe;
+        };
+    	say("I'd had such a great time in " + theCountry + "! As much as I hated leaving, " +
+    		"I was really anxious to get to the next country.");
+};
 
-//Boolean Function
+for (var countryNumber = 0; countryNumber < europe.length; countryNumber++) {
+    	goToCountry(countryNumber);
+    	
+};
+
+
+
+
+
+
+
+
 
 
