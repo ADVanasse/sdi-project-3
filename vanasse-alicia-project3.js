@@ -70,32 +70,6 @@ var goToCountry = function (whereTo) {
 goToCountry();
     };
            
-// Array Function
-
-var goToCountry = function(whereTo) {
-    var theCountry = europe[whereTo],
-        daysThisCountry = daysEurope[countryNumber];
-   			 say( "I was excited to visit " + theCountry +
-        " for " + daysThisCountry + " days. It went by way too fast.");
-    for (var days = 0; days < daysThisCountry; days ++) {
-            var daysLeft = daysThisCountry - days;
-            	say("Before I knew it " + days + " had gone by, leaving me with only " +
-            		daysLeft + "to enjoy the country's beauty.");
-            			return europe;
-        };
-    	say("I'd had such a great time in " + theCountry + "! As much as I hated leaving, " +
-    		"I was really anxious to get to the next country.");
-};
-
-for (var countryNumber = 0; countryNumber < europe.length; countryNumber++) {
-    	goToCountry(countryNumber);
-    	
-};
-
-
-
-
-
 
 
 
