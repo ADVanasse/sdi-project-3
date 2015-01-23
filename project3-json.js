@@ -1,6 +1,6 @@
 // JSON Data for Project 3
 
-var json = {
+var json= {
 	"hotels":[
 			{"hotelName" : "Hilton",
 			 "bedType" : "King"
