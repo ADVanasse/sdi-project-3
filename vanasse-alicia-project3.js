@@ -12,7 +12,6 @@ var say = function (message) {
     console.log(message);
 };
 
-var json;
 
 //Global Variables
 var where = ["here",
@@ -28,8 +27,32 @@ var europe = ["Italy",
 var travelBug = true;
 var hotelCost = 150;
 
+//JSON Data
 
-	
+var json = {
+	"hotels":[
+			{"hotelName" : "Hilton",
+			 "bedType" : "King"
+			 },
+			{
+			"hotelName" : "InterContinental", 
+			"bedType" : "California King"
+			},
+			{
+			"hotelName" : "Marriott",
+			"bedType" : "Twin"
+			}
+		]
+	};
+var handleData = function (json) {
+	console.log(json);
+};
+handleData(json);
+
+for (var key in json.hotels) {
+	var hotel = json.hotels[key];
+};
+	say("We had stayed in a " + hotel + " most nights.");
 // Prompt for Procedure Argument
 
 var letsFly = prompt("Do you like to travel?","Yes or No");
@@ -56,7 +79,7 @@ var iCouldnt = function(country,country2) {
 		
 
 				
-// Array Function with For loop 
+// Array Function with For loop with Array Return
 
 
 var goToCountry = function(whereTo) {
@@ -72,7 +95,7 @@ var goToCountry = function(whereTo) {
     							"I was really anxious to get to the next country.");
     							return theCountry;
     		};
-		}; //Nested Loop
+		}; //Nested Loop with Array Property
    				for (var countryNumber = 0; countryNumber < europe.length; countryNumber++) {
     					 goToCountry(countryNumber);  
     					 	
@@ -83,7 +106,8 @@ var goToCountry = function(whereTo) {
 var myFavorite = function() {
 	var soFar = "I loved " + europe.pop() + " the most soo far!";
 	return soFar;
-}
+};
+
 	say(myFavorite());
 
 
@@ -94,17 +118,32 @@ var sleepCost = function(number) {
 };
 say("it cost " + sleepCost(22) + " dollars for the hotels alone. But it was worth every penny!");
 
-// Boolean Function with While Loop 
+// Array Function with Array Argument, While Loop and Number Return
 
 var howMany = function(arrayLength){
-var numCountries = arrayLength + 2;
-	while(numCountries > 0) {
-		say("I've been to " + numCountries + " in Europe so far");
-		numCountries++;
-		return numCountries;
+	var numCountries = arrayLength + 2;
+		while(numCountries > 0) {
+			say("I've been to " + numCountries + " countries in Europe so far");
+			numCountries++;
+			return numCountries;
 	}
 };
+	
 	say("I've been to " + howMany(europe.length) + " different countries altogether.");
+	
+// Boolean Function with Boolean Argument and Boolean Return
+
+var couldItBe = function(travelBug) {
+	var yes = true;
+	var no = false;
+		if(!travelBug === true) {
+			return yes;
+		} else {
+			return no;
+		}
+	};
+			say("It is " + couldItBe() + " that this won't be my last trip!");
+	
 	
 
 
