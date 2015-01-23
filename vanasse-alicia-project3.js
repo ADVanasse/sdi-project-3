@@ -28,7 +28,7 @@ var europe = ["Italy",
 var travelBug = true;
 var hotelCost = 150;
 var myVice = "Travel is my vice!";
-
+var daysNeeded = 22;
 
 
 	
@@ -36,7 +36,7 @@ var myVice = "Travel is my vice!";
 
 var letsFly = prompt("Do you like to travel?","Yes or No");
 
-// Procedure
+// Procedure with Nested Conditional
 
     if (letsFly === "Yes") {
         say("Me too, I just got back from a big trip to " + bigTrip + "."); 
@@ -55,6 +55,7 @@ var iCouldnt = function(country,country2) {
 	say(iCouldnt("Australia","Japan"));
 	
 
+		
 
 				
 // Array Function with In For loop
@@ -79,6 +80,13 @@ var goToCountry = function(whereTo) {
     					 	
     };
 
+// String Function with Array Method and String Return
+
+var myFavorite = function() {
+	var soFar = "I loved " + europe.pop();
+	return soFar;
+}
+	say(myFavorite());
 
 
 // Number Function with Number argument, Math and Number Return
