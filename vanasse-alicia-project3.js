@@ -14,9 +14,7 @@ var say = function (message) {
 
 
 //Global Variables
-var where = ["here",
-			 "there",
-			 "every and anywhere"];               
+             
 var bigTrip = "Europe";            
 var europe = ["Italy",					
               "Spain",
