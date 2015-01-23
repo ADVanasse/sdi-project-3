@@ -27,8 +27,6 @@ var europe = ["Italy",
  	 daysEurope = [7, 5, 3, 4, 3];     	
 var travelBug = true;
 var hotelCost = 150;
-var myVice = "Travel is my vice!";
-var daysNeeded = 22;
 
 
 	
@@ -58,7 +56,7 @@ var iCouldnt = function(country,country2) {
 		
 
 				
-// Array Function with In For loop
+// Array Function with For loop 
 
 
 var goToCountry = function(whereTo) {
@@ -72,9 +70,9 @@ var goToCountry = function(whereTo) {
             					daysLeft + " to enjoy the country's beauty.");
             			say("I'd had such a great time in " + theCountry + "! As much as I hated leaving, " +
     							"I was really anxious to get to the next country.");
-    							return;
+    							return theCountry;
     		};
-		};
+		}; //Nested Loop
    				for (var countryNumber = 0; countryNumber < europe.length; countryNumber++) {
     					 goToCountry(countryNumber);  
     					 	
@@ -83,21 +81,31 @@ var goToCountry = function(whereTo) {
 // String Function with Array Method and String Return
 
 var myFavorite = function() {
-	var soFar = "I loved " + europe.pop();
+	var soFar = "I loved " + europe.pop() + " the most soo far!";
 	return soFar;
 }
 	say(myFavorite());
 
 
-// Number Function with Number argument, Math and Number Return
+// Number Function with Number Argument, Math, and Number Return
 
 var sleepCost = function(number) {
 	return hotelCost * number;
 };
 say("it cost " + sleepCost(22) + " dollars for the hotels alone. But it was worth every penny!");
 
+// Boolean Function with While Loop 
 
-// Boolean Function with Boolean Arguments
+var howMany = function(arrayLength){
+var numCountries = arrayLength + 2;
+	while(numCountries > 0) {
+		say("I've been to " + numCountries + " in Europe so far");
+		numCountries++;
+		return numCountries;
+	}
+};
+	say("I've been to " + howMany(europe.length) + " different countries altogether.");
+	
 
 
 
